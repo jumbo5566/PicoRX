@@ -2091,7 +2091,7 @@ bool ui::frequency_entry(const char title[], uint32_t which_setting, bool &ok){
             if((settings[idx_frequency] > settings[idx_max_frequency]) || (settings[idx_frequency] < settings[idx_max_frequency]))
             {
               settings[idx_min_frequency] = 0;
-              settings[idx_max_frequency] = 30000000;
+              settings[idx_max_frequency] = 130000000;
             }
           case idx_max_frequency:
             //when changing band limits, force frequency within
