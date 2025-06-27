@@ -76,7 +76,7 @@ void process_cat_control(rx_settings & settings_to_apply, rx_status & status, rx
         } else {
             uint32_t frequency_Hz;
             sscanf(cmd+2, "%lu", &frequency_Hz);
-            if(frequency_Hz <= 30000000)
+            if(frequency_Hz <= 130000000)
             {
               settings[idx_frequency]=frequency_Hz;
               settings_changed = true;
