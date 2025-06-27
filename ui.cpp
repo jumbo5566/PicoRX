@@ -265,7 +265,7 @@ void ui::renderpage_original(rx_status & status, rx & receiver)
 
   receiver.access(false);
   const float power_dBm = status.signal_strength_dBm;
-  const float battery_voltage = 3.0f * 3.3f * (status.battery/65535.0f);
+  const float battery_voltage = 3.0f * 3.3f * (status.battery/65535.0f)*2;
   receiver.release();
 
   const uint8_t buffer_size = 21;
