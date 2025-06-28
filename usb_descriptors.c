@@ -52,7 +52,7 @@ tusb_desc_device_t const desc_device =
     .bDeviceProtocol    = MISC_PROTOCOL_IAD,
     .bMaxPacketSize0    = CFG_TUD_ENDPOINT0_SIZE,
 
-    .idVendor           = 0xCafe,
+    .idVendor           = 0x2e8a,
     .idProduct          = USB_PID,
     .bcdDevice          = 0x0100,
 
@@ -126,8 +126,8 @@ enum {
 char const *string_desc_arr[] =
 {
         (const char[]){0x09, 0x04}, // 0: is supported language is English (0x0409)
-        "dawsonjon",                // 1: Manufacturer
-        "PicoRX",                   // 2: Product
+        "ts480",                // 1: Manufacturer
+        "USB_SDR_ts480",                   // 2: Product
         NULL,                       // 3: Serials will use unique ID
         "UAC2",                     // 4: Audio Interface
         "CDC",                      // 5: CDC Interface
