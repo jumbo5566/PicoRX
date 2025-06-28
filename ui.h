@@ -26,6 +26,9 @@
 #define M_PI 3.14159265
 #endif
 
+#define PICO_DEFAULT_UART_TX_PIN 6
+#define PICO_DEFAULT_UART_RX_PIN 7
+
 const uint8_t PIN_MENU = 22;
 const uint8_t PIN_BACK = 17;
 const uint8_t PIN_ENCODER_PUSH = 5;
