@@ -62,8 +62,8 @@ if(PICO_BOARD STREQUAL "pico")
   pico_generate_pio_header(picorx ${CMAKE_CURRENT_LIST_DIR}/quadrature_encoder.pio)
   pico_add_extra_outputs(picorx)
   # enable usb output, disable uart output
-  pico_enable_stdio_usb(picorx 1)
-  pico_enable_stdio_uart(picorx 0)
+  pico_enable_stdio_usb(picorx 0)
+  pico_enable_stdio_uart(picorx 1)
   target_include_directories(picorx PRIVATE ${CMAKE_CURRENT_LIST_DIR})
   target_link_libraries(picorx PRIVATE pico_stdlib
                                        pico_multicore
